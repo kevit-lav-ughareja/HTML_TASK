@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Position Layout</title>
+    <title>Position Layout with Images</title>
     <style>
       * {
         margin: 0;
@@ -27,26 +27,27 @@
         line-height: 60px;
       }
 
-      .left {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 20%;
-        height: calc(100% - 120px);
-        background-color: #ccc;
-        text-align: center;
-        line-height: 200px;
-      }
-
+      .left,
       .right {
         position: absolute;
         top: 60px;
-        right: 0;
         width: 20%;
         height: calc(100% - 120px);
         background-color: #ccc;
         text-align: center;
-        line-height: 200px;
+        padding: 20px;
+      }
+
+      .right {
+        right: 0;
+      }
+
+      .left img,
+      .right img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 10px;
       }
 
       .main {
@@ -57,7 +58,8 @@
         height: calc(100% - 120px);
         background-color: #fff;
         text-align: center;
-        line-height: 200px;
+        padding: 40px;
+        overflow-y: auto;
       }
 
       .footer {
@@ -74,9 +76,28 @@
   </head>
   <body>
     <div class="nav">Navigation</div>
-    <div class="left">Left content</div>
-    <div class="main">Main content</div>
-    <div class="right">Right content</div>
+
+    <div class="left">
+      <img
+        src="https://t3.ftcdn.net/jpg/02/70/35/00/360_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg"
+        alt="Left Image"
+      />
+      <p>This is the left image description.</p>
+    </div>
+
+    <div class="main">
+      <h2>Main Content</h2>
+      <p>This is the main section between the two sidebars.</p>
+    </div>
+
+    <div class="right">
+      <img
+        src="https://t3.ftcdn.net/jpg/02/70/35/00/360_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg"
+        alt="Right Image"
+      />
+      <p>This is the right image description.</p>
+    </div>
+
     <div class="footer">Footer</div>
   </body>
 </html>
