@@ -1,143 +1,82 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-           body{
-            margin: 0;
-           }
-             footer{
-                background-color: aqua;
-                text-align: center;
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-             }
-            header {
-                padding: 10px 16px;
-                background-color: aqua;
-                color: black;
-                text-align: center;
-               
-            }
-            table {
- 
-                border-collapse: collapse;
-                width: 80%;
-             } 
-             #p1{
-                border: none;
-             }
-             th, td {
-               
-               border: 1px solid #333;
-               text-align: center;
-       }
-       table {
- 
-           border-collapse: collapse;
-           width: 80%;
-       } 
-       th{
-           background-color: grey;
-           text-align: center;
-       } 
-            
-         
-         </style>
-    </head>
-    <body>
-        <header>
-            <h2>Cities</h2>
-        </header>
-        <br>
-        <main>
-            <section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Position Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-                <table style="width: 100%; ">
-                    <tr>
-                        <td id="p1" style="width: 25%; height: 25%; vertical-align: top;">
-                            <aside>
-                                <img style="width:50%;" src="https://i.pinimg.com/736x/1e/a3/c8/1ea3c8d857a5538900ebb4f6ce56f9e1.jpg">
-                                <figcaption>Dhoni (born July 7, 1981, Ranchi, Bihar [now Jharkhand] 
-                                    state, India) is an Indian cricketer whose rise to 
-                                    prominence in the early 21st century culminated in his 
-                                    captaincy of the Indian national team that won the one-day 
-                                    Cricket World Cup in 2011. Dhoni made his international 
-                                    debut in 2004.</figcaption>
-                            </aside>
-                        </td>
-                        <td id="p1" style="width: 50%; vertical-align: top; ">
-                            <article>
-                                <p style="text-align: center;">This is Main tag</p>
-                                <table style="width:100%">
-                                    <th colspan="3"><strong>Daily routing</strong> </th>
-                                   <tr>
-                                    <td rowspan="7" style="width: 30%;">Timing and Task</td>
-                                    <td style="width: 10%;">7:00</td>
-                                    <td >Wake up</td>
-                                   </tr>
-                                   <tr>
-                                    
-                                    <td colspan="2">BreakFast</td>
-                                    
-                                   </tr>
-                                   <tr>
-                                    
-                                    <td style="width: 10%;">9:30</td>
-                                    <td >Come to office</td>
-                                  
-                                   </tr>
-                                   <tr>
-                                   
-                                    <td colspan="2">Lunch Time</td>
-                                </tr>
-                                   <tr>
-                                    
-                                    <td style="width: 10%;">7:00</td>
-                                    <td >Get back to homeafter some hard work</td>
-                                   </tr>
-                                   <tr>
-                                    
-                                    <td colspan="2">Dinner</td>
-                                   </tr>
-                                   <tr>
-                                    
-                                    <td style="width: 10%;">10:00</td>
-                                    <td >Sleep</td>
-                                   </tr>
-                                 
-                                  </table>
-                            </article>
-                        </td>
-                        <td id="p1" style="width: 25%; vertical-align: top;">
-                            <aside>
-                                <img style="width:50%;" src="https://i.pinimg.com/736x/1e/a3/c8/1ea3c8d857a5538900ebb4f6ce56f9e1.jpg">
-                                <figcaption>Dhoni (born July 7, 1981, Ranchi, Bihar [now Jharkhand] 
-                                    state, India) is an Indian cricketer whose rise to 
-                                    prominence in the early 21st century culminated in his 
-                                    captaincy of the Indian national team that won the one-day 
-                                    Cricket World Cup in 2011. Dhoni made his international 
-                                    debut in 2004.</figcaption>
-                            </aside>
-                        </td>
-                    </tr>
-                </table>
-            </section>
+      body,
+      html {
+        height: 100%;
+        font-family: Arial, sans-serif;
+      }
 
-           
-          </main>  
-        
+      .nav {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #555;
+        color: white;
+        text-align: center;
+        line-height: 60px;
+      }
 
-        <footer>
-            <p>Footer</p>
-        </footer>
+      .left {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 20%;
+        height: calc(100% - 120px);
+        background-color: #ccc;
+        text-align: center;
+        line-height: 200px;
+      }
 
-    </body>
+      .right {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 20%;
+        height: calc(100% - 120px);
+        background-color: #ccc;
+        text-align: center;
+        line-height: 200px;
+      }
 
-    </html>
-    </body>
-    </html>
+      .main {
+        position: absolute;
+        top: 60px;
+        left: 20%;
+        width: 60%;
+        height: calc(100% - 120px);
+        background-color: #fff;
+        text-align: center;
+        line-height: 200px;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #eee;
+        text-align: center;
+        line-height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">Navigation</div>
+    <div class="left">Left content</div>
+    <div class="main">Main content</div>
+    <div class="right">Right content</div>
+    <div class="footer">Footer</div>
+  </body>
+</html>
