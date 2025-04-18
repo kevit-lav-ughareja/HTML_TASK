@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="result.html" method="get">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        </div>
+        
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required></input>
+        </div>
+        <br>
+        <div>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="30" required></textarea>
+        </div>
+        
+        <br>
+        
+    <div>
+       <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+        </select >
+    </div>
+     
+    <div>
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+    </div>
+        <br>
+        </br>
+
+        <div>
+        <p>Hobbies:</p>
+        <input type="checkbox" id="music" name="hobby" value="music">
+        <label for="music">Music</label>
+        
+        <input type="checkbox" id="sports" name="hobby" value="sports">
+        <label for="sports">Sports</label>
+    </div>
+
+        <br>
+        </br>
+        <div>
+        <label for="resume">Upload Resume:</label>
+        
+        <input type="file" id="resume" name="resume"  accept="image/*" required>
+    </div>
+        <br>
+        </br>
+<div>
+        <input type="datetime-local" name="date-and-time">
+    </div>
+        <br>
+        </br>
+<div>
+        <label for="tel">Phone number:</label>
+        <input type="tel"  name="telephone-number">
+    </div>
+        <br>
+        </br>
+        
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
